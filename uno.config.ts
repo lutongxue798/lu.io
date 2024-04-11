@@ -27,7 +27,8 @@ export default defineConfig({
         sans: 'DM Sans',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
-        noto:"Noto Sans"
+        noto:"Noto Sans",
+        cabin:'Cabin'
       },
     }),
   ],
