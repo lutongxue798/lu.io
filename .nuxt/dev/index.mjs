@@ -8,7 +8,7 @@ import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRender
 import { stringify, uneval } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/devalue@4.3.3/node_modules/devalue/index.js';
 import destr from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/ufo@1.5.3/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue/server-renderer/index.mjs';
+import { renderToString } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/vue@3.4.27/node_modules/vue/server-renderer/index.mjs';
 import { hash } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/ohash@1.1.3/node_modules/ohash/dist/index.mjs';
 import { renderSSRHead } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/@unhead+ssr@1.9.12/node_modules/@unhead/ssr/dist/index.mjs';
 import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/ofetch@1.3.4/node_modules/ofetch/dist/node.mjs';
@@ -23,7 +23,7 @@ import { toRouteMatcher, createRouter } from 'file:///Users/luwenrui/Documents/m
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { consola } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/consola@3.2.3/node_modules/consola/dist/index.mjs';
 import { getContext } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/unctx@2.3.1/node_modules/unctx/dist/index.mjs';
-import { version, unref } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue/index.mjs';
+import { version, unref } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/vue@3.4.27/node_modules/vue/index.mjs';
 import { createServerHead as createServerHead$1 } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/unhead@1.9.12/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/@unhead+shared@1.9.12/node_modules/@unhead/shared/dist/index.mjs';
 
@@ -599,7 +599,7 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const script$1 = `
+const script = `
 if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
   Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
     value: {},
@@ -610,16 +610,16 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _MYdHnhlzeU = (function(nitro) {
+const _uhC8oLaj94 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script$1}<\/script>`);
+    htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const rootDir = "/Users/luwenrui/Documents/my-project/lu.io";
 
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _OSNfEShUwB = (nitroApp) => {
+const _XF91mIe8rT = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -684,18 +684,9 @@ function onConsoleLog(callback) {
   consola.wrapConsole();
 }
 
-const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,c=window.localStorage,d=[\"dark\",\"light\"],n=c&&c.getItem&&c.getItem(\"nuxt-color-mode\")||\"system\";let l=n===\"system\"?f():n;const i=e.getAttribute(\"data-color-mode-forced\");i&&(l=i),r(l),a[\"__NUXT_COLOR_MODE__\"]={preference:n,value:l,getColorScheme:f,addColorScheme:r,removeColorScheme:u};function r(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function u(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function m(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function f(){if(a.matchMedia&&m(\"\").media!==\"not all\"){for(const o of d)if(m(\":\"+o).matches)return o}return\"light\"}})();\n";
-
-const _Je4VCu4UI3 = (function(nitro) {
-  nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script}<\/script>`);
-  });
-});
-
 const plugins = [
-  _MYdHnhlzeU,
-_OSNfEShUwB,
-_Je4VCu4UI3
+  _uhC8oLaj94,
+_XF91mIe8rT
 ];
 
 const scheduledTasks = false;
@@ -825,13 +816,11 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const _lazy_5sbgpn = () => Promise.resolve().then(function () { return pageview$1; });
-const _lazy_6UDQtv = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_HELvPB = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/pageview', handler: _lazy_5sbgpn, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_6UDQtv, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_6UDQtv, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_HELvPB, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_HELvPB, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -1041,18 +1030,6 @@ const errorDev = /*#__PURE__*/Object.freeze({
   template: template$1
 });
 
-const startAt = Date.now();
-let count = 0;
-const pageview = defineEventHandler(() => ({
-  pageview: count++,
-  startAt
-}));
-
-const pageview$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: pageview
-});
-
 const Vue3 = version.startsWith("3");
 
 function resolveUnref(r) {
@@ -1109,7 +1086,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":""},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"theme-color","media":"(prefers-color-scheme: light)","content":"white"},{"name":"theme-color","media":"(prefers-color-scheme: dark)","content":"#222222"}],"link":[{"rel":"icon","href":"/favicon.ico","sizes":"any"},{"rel":"icon","type":"image/svg+xml","href":"/nuxt.svg"},{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],"style":[],"script":[],"noscript":[],"viewport":"width=device-width,initial-scale=1"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
 const appRootId = "__nuxt";
 

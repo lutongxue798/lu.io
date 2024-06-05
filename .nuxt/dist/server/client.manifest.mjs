@@ -1,1 +1,1 @@
-export { default } from "file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/@nuxt+vite-builder@3.11.2_eslint@9.4.0_rollup@2.79.1_typescript@5.4.5_vue-tsc@2.0.19_vue@3.4.27/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/luwenrui/Documents/my-project/lu.io/node_modules/.pnpm/@nuxt+vite-builder@3.11.2_vue@3.4.27/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
