@@ -1,13 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import MyProfile from "../components/MyProfile.astro";
+import Posts from "../components/Posts.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1 class="text-3xl font-bold text-gray-300">
-			Hello world!
-		</h1>
+	<main class="px-6 py-[8vh] max-w-[76ch] mx-auto xl:text-lg dark:prose-invert">
+		<div class="flex justify-around">
+			<MyProfile />
+			<Posts />
+		</div>
 	</main>
 </Layout>
-
