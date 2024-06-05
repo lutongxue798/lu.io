@@ -1,7 +1,8 @@
 import process from 'node:process'
 import type { ModuleOptions } from '@vite-pwa/nuxt'
-import { appDescription, appName } from '../constants/index'
 
+const appDescription = ''
+const appName = ''
 const scope = '/'
 
 export const pwa: ModuleOptions = {

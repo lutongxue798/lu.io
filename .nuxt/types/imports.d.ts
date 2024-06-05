@@ -105,7 +105,6 @@ declare global {
   const useAttrs: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useAttrs']
   const useColorMode: typeof import('../../node_modules/.pnpm/@nuxtjs+color-mode@3.4.1_rollup@2.79.1/node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']
   const useCookie: typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/cookie')['useCookie']
-  const useCount: typeof import('../../composables/count')['useCount']
   const useCssModule: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssModule']
   const useCssVars: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssVars']
   const useError: typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/error')['useError']
@@ -142,7 +141,6 @@ declare global {
   const useState: typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/state')['useState']
   const useTransitionState: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useTransitionState']
   const useTransparentPwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.7.0_rollup@2.79.1_vite@5.2.12_workbox-build@7.1.1_workbox-window@7.1.0/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useTransparentPwaIcon']
-  const useUserStore: typeof import('../../composables/user')['useUserStore']
   const watch: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watch']
   const watchEffect: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchEffect']
   const watchPostEffect: typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchPostEffect']
@@ -268,7 +266,6 @@ declare module 'vue' {
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useAttrs']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+color-mode@3.4.1_rollup@2.79.1/node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
-    readonly useCount: UnwrapRef<typeof import('../../composables/count')['useCount']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssVars']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/error')['useError']>
@@ -305,7 +302,6 @@ declare module 'vue' {
     readonly useState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useTransitionState']>
     readonly useTransparentPwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.7.0_rollup@2.79.1_vite@5.2.12_workbox-build@7.1.1_workbox-window@7.1.0/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useTransparentPwaIcon']>
-    readonly useUserStore: UnwrapRef<typeof import('../../composables/user')['useUserStore']>
     readonly watch: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchPostEffect']>
@@ -424,7 +420,6 @@ declare module '@vue/runtime-core' {
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useAttrs']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+color-mode@3.4.1_rollup@2.79.1/node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
-    readonly useCount: UnwrapRef<typeof import('../../composables/count')['useCount']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useCssVars']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/error')['useError']>
@@ -461,7 +456,6 @@ declare module '@vue/runtime-core' {
     readonly useState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.11.2_@opentelemetry+api@1.8.0_@unocss+reset@0.60.4_eslint@9.4.0_floating-vue@5.2.2_rol_kz5sis3zuyiqyo5au5yoh7bo4q/node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['useTransitionState']>
     readonly useTransparentPwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.7.0_rollup@2.79.1_vite@5.2.12_workbox-build@7.1.1_workbox-window@7.1.0/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useTransparentPwaIcon']>
-    readonly useUserStore: UnwrapRef<typeof import('../../composables/user')['useUserStore']>
     readonly watch: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue')['watchPostEffect']>
