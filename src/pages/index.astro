@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MyProfile from "../components/MyProfile.astro";
 import Posts from "../components/Posts.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to lu.io">
 	<main class="px-6 py-[8vh] max-w-[76ch] mx-auto xl:text-lg dark:prose-invert">
-		<div class="flex justify-around">
-			<MyProfile />
-			<Posts />
-		</div>
+		<section class="text-white pt-20">
+			<p class="text-4xl">Hi, I'm Lu.</p>
+			<p class="text-1xl mt-5 mb-5 font-sans antialiased">
+				currently working as a front-end developer in a pharmaceutical company.
+			</p>
+		</section>
+		<Posts />
 	</main>
 </Layout>
